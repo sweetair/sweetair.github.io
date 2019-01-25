@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+
+<head>
+	<meta charset='utf-8' />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>theSac欢迎您</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+</head>
+
+<body>
+	<div class="pages">
+		<div class="section"></div>
+	</div>
+
+
+	<a href="https://thesac.gitee.io/html5/stickylist.html">
+		<h1>2018/12/03 -- sticky吸顶列表</h1>
+	</a>
+	<p>see you soon </p>
+
+	<!-- Gitalk 评论 start  -->
+	<div id="gitalk-container"></div>
+	<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+	<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+	<script>
+		const gitalk = new Gitalk({
+			clientID: 'abc3d15f279e7e55571b',
+			clientSecret: '24fcb10283bee6e04a588ee5060d002c59fd0afa',
+			repo: 'sweetair.github.io',
+			owner: 'sweetair',
+			admin: ['sweetair'],
+			id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+			distractionFreeMode: false  // Facebook-like distraction free mode
+		})
+
+		gitalk.render('gitalk-container')
+	</script>
+	<!--Gitalk end-->
+</body>
+
+</html>
